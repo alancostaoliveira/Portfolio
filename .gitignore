@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Lockfile
+package-lock.json
+
+# Build / generated
+assets/images/optimized/
+
+# Drafts and archives
+rescunho/
+"rescunho/"
+
+# OS files
+.DS_Store
+
+# Logs
+npm-debug.log*
+
+# Editor
+.vscode/
