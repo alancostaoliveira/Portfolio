@@ -29,3 +29,8 @@ npm run optimize-images
 
 O script usa `sharp` e gera imagens otimizadas para as pastas `projects`, `technologies` e `avatar` dentro de `assets/images/optimized`.
 
+## Deploy (GitHub Pages)
+
+O repositório inclui um GitHub Actions workflow que publica o conteúdo da branch `main` para a branch `gh-pages` automaticamente. Após o primeiro push o Pages ficará disponível em `https://<seu-usuario>.github.io/Portfolio/` (pode levar alguns minutos para ficar ativo).
+
+Se preferir publicar manualmente, basta ativar GitHub Pages nas configurações do repositório apontando para a branch `gh-pages`.
