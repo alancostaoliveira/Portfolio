@@ -31,6 +31,4 @@ O script usa `sharp` e gera imagens otimizadas para as pastas `projects`, `techn
 
 ## Deploy (GitHub Pages)
 
-O repositório inclui um GitHub Actions workflow que publica o conteúdo da branch `main` para a branch `gh-pages` automaticamente. Após o primeiro push o Pages ficará disponível em `https://<seu-usuario>.github.io/Portfolio/` (pode levar alguns minutos para ficar ativo).
-
-Se preferir publicar manualmente, basta ativar GitHub Pages nas configurações do repositório apontando para a branch `gh-pages`.
+O repositório inclui um GitHub Actions workflow que publica o conteúdo da branch `main` para a branch `gh-pages` automaticamente. Após o primeiro push o Pages ficará disponível em `https://alancostaoliveira.github.io/Portfolio/#home` (pode levar alguns minutos para ficar ativo).

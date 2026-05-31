@@ -5,7 +5,9 @@ const sharp = require('sharp');
 const root = path.join(__dirname, '..', 'assets', 'images');
 
 async function ensureDir(dir) {
-  try { await fs.mkdir(dir, { recursive: true }); } catch(e) {}
+  try {
+    await fs.mkdir(dir, { recursive: true });
+  } catch (e) {}
 }
 
 async function processFile(filePath, outDir) {
@@ -15,9 +17,7 @@ async function processFile(filePath, outDir) {
 
   try {
     const input = await fs.readFile(filePath);
-    await sharp(input)
-      .webp({ quality: 80 })
-      .toFile(outFile);
+    await sharp(input).webp({ quality: 80 }).toFile(outFile);
     console.log('Created', outFile);
   } catch (err) {
     console.error('Failed', filePath, err.message);
@@ -53,9 +53,11 @@ async function main() {
           .webp({ quality: 80 })
           .toFile(outFile);
         console.log('Project optimized:', outFile);
-      } catch (err) { console.error('Skip', file, err.message); }
+      } catch (err) {
+        console.error('Skip', file, err.message);
+      }
     });
-  } catch(e) {}
+  } catch (e) {}
 
   // Technologies and others: convert to webp (no large resize)
   await walk(root, async (file) => {
@@ -75,7 +77,9 @@ async function main() {
           .webp({ quality: 85 })
           .toFile(outFile);
         console.log('Avatar optimized:', outFile);
-      } catch (err) { console.error('Skip avatar', file, err.message); }
+      } catch (err) {
+        console.error('Skip avatar', file, err.message);
+      }
       return;
     }
 
@@ -90,7 +94,9 @@ async function main() {
           .webp({ quality: 80 })
           .toFile(outFile);
         console.log('Tech optimized:', outFile);
-      } catch (err) { console.error('Skip tech', file, err.message); }
+      } catch (err) {
+        console.error('Skip tech', file, err.message);
+      }
       return;
     }
   });
@@ -98,4 +104,4 @@ async function main() {
   console.log('\nOptimization complete. Files are in assets/images/optimized');
 }
 
-main().catch(err => console.error(err));
+main().catch((err) => console.error(err));
