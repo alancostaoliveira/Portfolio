@@ -1,9 +1,20 @@
 const toggleTheme = document.getElementById('toggleTheme');
 const rootHtml = document.documentElement;
+const toggleThemeIcon = toggleTheme?.querySelector('i');
 const accordionHeaders = document.querySelectorAll('.accordion__header');
 const menuLinks = document.querySelectorAll(
   '.header__nav .menu__link, .nav--mobile .menu__link',
 );
+
+function syncThemeIcon() {
+  if (!toggleThemeIcon) {
+    return;
+  }
+
+  const currentTheme = rootHtml.getAttribute('data-theme');
+  toggleThemeIcon.className =
+    currentTheme === 'dark' ? 'bi bi-moon-stars' : 'bi bi-sun';
+}
 
 function changeTheme() {
   const currentTheme = rootHtml.getAttribute('data-theme');
@@ -12,13 +23,14 @@ function changeTheme() {
     ? rootHtml.setAttribute('data-theme', 'light')
     : rootHtml.setAttribute('data-theme', 'dark');
 
-  toggleTheme.classList.toggle('bi-sun');
-  toggleTheme.classList.toggle('bi-moon-stars');
+  syncThemeIcon();
 }
 
 if (toggleTheme) {
   toggleTheme.addEventListener('click', changeTheme);
 }
+
+syncThemeIcon();
 
 accordionHeaders.forEach((header) => {
   header.addEventListener('click', () => {
