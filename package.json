@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-image-optimizer",
+  "version": "1.0.0",
+  "description": "Scripts para otimizar imagens do portfólio (converte para WebP e redimensiona)",
+  "main": "scripts/optimize-images.js",
+  "scripts": {
+    "optimize-images": "node scripts/optimize-images.js"
+  },
+  "dependencies": {
+    "sharp": "^0.32.4"
+  }
+}
