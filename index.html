@@ -41,9 +41,9 @@
         <img class="brand__logo" src="assets/images/logo-ea.png" alt="Logo EA">
       </a>
     </div>
-    <div class="header__toggle">
-      <i id="toggleTheme" class="bi bi-sun"></i>
-    </div>
+    <button class="header__toggle" id="toggleTheme" type="button" aria-label="Alternar tema">
+      <i class="bi bi-sun" aria-hidden="true"></i>
+    </button>
   </header>
   <nav class="nav--mobile">
     <ul class="menu menu--mobile">
@@ -90,20 +90,18 @@
           </a>
         </li>
         <li>
-          <a class="menu__link" href="" target="_blank">
+          <a class="menu__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
             <i class="menu__icon bi bi-instagram"></i>
           </a>
         </li>
       </ul>
-      <a href="#projetos">
-        <button class="btn btn--primary">
-          <span>Ver Projetos</span>
-          <i class="bi bi-arrow-down-right"></i>
-        </button>  
+      <a class="btn btn--primary" href="#projetos">
+        <span>Ver Projetos</span>
+        <i class="bi bi-arrow-down-right"></i>
       </a>
     </div>
     <div class="main__content2">
-      <iframe src="https://youtu.be/lLhHnEMXl9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/lLhHnEMXl9U" title="Vídeo de apresentação do portfólio" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </main>
 
@@ -140,26 +138,26 @@
           </ul>
           <ul class="technologies__list">
             <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/Angular.svg" alt="Logo Angular">
+              <img class="technologies__logo" src="assets/images/technologies/angular.svg" alt="Logo Angular">
             </li>
             <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/TypeScript.svg" alt="Logo TypeScript">
+              <img class="technologies__logo" src="assets/images/technologies/javascript.svg" alt="Logo JavaScript">
             </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
+            <li class="technologies__item technologies__item--text">
+              <span class="technologies__label">Bootstrap</span>
             </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/SASS.svg" alt="Logo SASS">
+            <li class="technologies__item technologies__item--text">
+              <span class="technologies__label">SASS</span>
             </li>
           </ul>
           <div class="card__buttons">
-            <button class="btn btn--primary">
+            <button class="btn btn--primary" type="button" disabled title="Prévia não configurada">
               <span>Prévia</span>
               <i class="bi bi-arrow-up-right"></i>
             </button>  
-            <button class="btn">
+            <a class="btn" href="https://github.com/alancostaoliveira?tab=repositories" target="_blank" rel="noreferrer">
               <span>Repositório</span>
-            </button>  
+            </a>  
           </div>
         </div>
       </div>
@@ -175,26 +173,26 @@
           </ul>
           <ul class="technologies__list">
             <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/Angular.svg" alt="Logo Angular">
+              <img class="technologies__logo" src="assets/images/technologies/angular.svg" alt="Logo Angular">
             </li>
             <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/TypeScript.svg" alt="Logo TypeScript">
+              <img class="technologies__logo" src="assets/images/technologies/javascript.svg" alt="Logo JavaScript">
             </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
+            <li class="technologies__item technologies__item--text">
+              <span class="technologies__label">Bootstrap</span>
             </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/SASS.svg" alt="Logo SASS">
+            <li class="technologies__item technologies__item--text">
+              <span class="technologies__label">SASS</span>
             </li>
           </ul>
           <div class="card__buttons">
-            <button class="btn btn--primary">
+            <button class="btn btn--primary" type="button" disabled title="Prévia não configurada">
               <span>Prévia</span>
               <i class="bi bi-arrow-up-right"></i>
             </button>  
-            <button class="btn">
+            <a class="btn" href="https://github.com/alancostaoliveira?tab=repositories" target="_blank" rel="noreferrer">
               <span>Repositório</span>
-            </button>  
+            </a>  
           </div>
         </div>
       </div>
@@ -210,34 +208,32 @@
           </ul>
           <ul class="technologies__list">
             <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/Angular.svg" alt="Logo Angular">
+              <img class="technologies__logo" src="assets/images/technologies/angular.svg" alt="Logo Angular">
             </li>
             <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/TypeScript.svg" alt="Logo TypeScript">
+              <img class="technologies__logo" src="assets/images/technologies/javascript.svg" alt="Logo JavaScript">
             </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
+            <li class="technologies__item technologies__item--text">
+              <span class="technologies__label">Bootstrap</span>
             </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/SASS.svg" alt="Logo SASS">
+            <li class="technologies__item technologies__item--text">
+              <span class="technologies__label">SASS</span>
             </li>
           </ul>
           <div class="card__buttons">
-            <button class="btn btn--primary">
+            <button class="btn btn--primary" type="button" disabled title="Prévia não configurada">
               <span>Prévia</span>
               <i class="bi bi-arrow-up-right"></i>
             </button>  
-            <button class="btn">
+            <a class="btn" href="https://github.com/alancostaoliveira?tab=repositories" target="_blank" rel="noreferrer">
               <span>Repositório</span>
-            </button>  
+            </a>  
           </div>
         </div>
       </div>
-      <a href="https://github.com/alancostaoliveira">
-        <button class="btn btn--primary">
-          <span>Ver Todos os Projetos</span>
-          <i class="bi bi-arrow-up-right"></i>
-        </button>  
+      <a class="btn btn--primary" href="https://github.com/alancostaoliveira?tab=repositories" target="_blank" rel="noreferrer">
+        <span>Ver Todos os Projetos</span>
+        <i class="bi bi-arrow-up-right"></i>
       </a>
     </div>
   </section>
@@ -254,17 +250,13 @@
           <span></span>
         </div>
         <div class="description__buttons">
-          <a href="https://www.linkedin.com/in/alancostadeoliveira/" target="_blank">
-            <button class="btn btn--primary">
-              <span>Conecte-se Comigo</span>
-              <i class="bi bi-arrow-up-right"></i>
-            </button> 
+          <a class="btn btn--primary" href="https://www.linkedin.com/in/alancostadeoliveira/" target="_blank" rel="noreferrer">
+            <span>Conecte-se Comigo</span>
+            <i class="bi bi-arrow-up-right"></i>
           </a>
-          <a href="">
-            <button class="btn">
-              <span>Currículo</span>
-            </button>
-          </a>
+          <button class="btn" type="button" disabled title="Currículo ainda não configurado">
+            <span>Currículo</span>
+          </button>
         </div>
       </div>
     </div>
@@ -280,18 +272,18 @@
           </div>
           <div class="about__icons">
             <i class="bi bi-mortarboard"></i>
-            <span></span>
+            <span>Em andamento</span>
           </div>
         </div>
         <div class="row2">
           <h3>Experiências</h3>
-          <h4></h4>
-          <span></span>
-          <span></span>
+          <h4>Projetos pessoais e estudos práticos</h4>
+          <span>HTML, CSS, JavaScript e Java</span>
+          <span>Transição de carreira</span>
           <ul class="about__list">
-            <li class="about__item">1</li>
-            <li class="about__item">2</li>
-            <li class="about__item">3</li>
+            <li class="about__item">Construção de portfólios</li>
+            <li class="about__item">Consumo de APIs</li>
+            <li class="about__item">Interfaces responsivas</li>
           </ul>
         </div>
       </div>
@@ -304,9 +296,6 @@
               <i class="bi bi-caret-down-fill"></i>
             </button>
             <div class="accordion__body">
-              <p>
-                p
-              </p>
               <p>
                 O que é versionamento de código, Git e GitHub. Como instalar e configurar o Git em diferentes sistemas 
                 operacionais e como autenticar via Token e SSH. Como manusear repositórios, indo desde a criação e clonagem 
@@ -321,29 +310,21 @@
               <i class="bi bi-caret-down-fill"></i>
             </button>
             <div class="accordion__body">
-              <p>
-               p
-              </p>
-              <p>
-                
-              </p>
+              <p>Curso focado em contribuição colaborativa, fluxo de pull request e boas práticas em repositórios públicos.</p>
             </div>
           </div>
           <div class="accordion__item">
             <button class="accordion__header end">
-              <span>n</span>
+              <span>Desenvolvimento Front-end</span>
               <i class="bi bi-caret-down-fill"></i>
             </button>
             <div class="accordion__body end">
-              <p>
-                p
-              </p>
-              <p>
-                p
-              </p>
+              <p>Formação e prática em HTML, CSS, JavaScript, responsividade e consumo de conteúdo visual para a web.</p>
             </div>
           </div>
         </div>
+      </div>
+    </div>
   </section>
   
   <section id="contato" class="contact">
@@ -353,35 +334,33 @@
     </p>
     <ul class="menu menu--social">
       <li>
-        <a class="menu__link" href="https://github.com/alancostaoliveira" target="_blank">
+        <a class="menu__link" href="https://github.com/alancostaoliveira" target="_blank" rel="noreferrer">
           <i class="menu__icon bi bi-github"></i>
           <span>GitHub</span>
         </a>
       </li>
       <li>
-        <a class="menu__link" href="https://www.linkedin.com/in/alancostadeoliveira/" target="_blank">
+        <a class="menu__link" href="https://www.linkedin.com/in/alancostadeoliveira/" target="_blank" rel="noreferrer">
           <i class="menu__icon bi bi-linkedin"></i>
           <span>LinkedIn</span>
         </a>
       </li>
       <li>
-        <a class="menu__link" href="" target="_blank">
+        <a class="menu__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
           <i class="menu__icon bi bi-instagram"></i>
           <span>Instagram</span>
         </a>
       </li>
     </ul>
-    <a href="mailto:alancostaoliveira@hotmail.com">
-      <button class="btn btn--primary">
-        <span class="email">alancostaoliveira@hotmail.com</span>
-      </button>  
+    <a class="btn btn--primary" href="mailto:alancostaoliveira@hotmail.com">
+      <span class="email">alancostaoliveira@hotmail.com</span>
     </a>
   </section>
 
   <footer>
     <p>
       © 2026 Portfólio desenvolvido por 
-      <a href="https://github.com/alancostaoliveira" target="_blank">Alan Costa de Oliveira</a>.
+      <a href="https://github.com/alancostaoliveira" target="_blank" rel="noreferrer">Alan Costa de Oliveira</a>.
     </p>
   </footer>
   <script src="assets/js/scripts.js"></script>

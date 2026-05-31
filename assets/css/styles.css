@@ -139,6 +139,11 @@ p {
 .header__toggle {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 .header__brand .brand__logo {
@@ -149,8 +154,15 @@ p {
 #toggleTheme {
   font-size: 1.5rem;
   color: var(--primary-color);
-  cursor: pointer;
   transition: ease-in-out 0.4s;
+}
+
+#toggleTheme:focus-visible,
+.btn:focus-visible,
+.menu__link:focus-visible,
+.accordion__header:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
 }
 
 .menu {
@@ -229,6 +241,12 @@ p {
   transition: ease-in-out 0.3s;
   cursor: pointer;
   color: var(--primary-color);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
 }
 
 .btn:hover {
@@ -312,6 +330,16 @@ main {
 
 .technologies__logo {
   height: 2.4rem;
+}
+
+.technologies__item--text {
+  min-width: 5.5rem;
+  padding: 0 1rem;
+  color: var(--title-color);
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
 }
 
 .technologies__logo {
